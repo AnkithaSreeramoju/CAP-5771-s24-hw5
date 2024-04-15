@@ -54,7 +54,7 @@ def question2():
     # The formulas should only use the variable 'p'. The formulas should be
     # a valid Python expression. Use the functions in the math module as
     # required.
-    answers['(c) Weight update'] = 0.424
+    answers['(c) Weight update'] = None
 
     # type: float
     # the answer should be correct to 3 significant digits
@@ -116,16 +116,16 @@ def question6():
     answers = {}
 
     # type: eval_float
-    answers['(a) C1-TPR'] = "p"
+    answers['(a) C1-TPR'] = "1 * p"
 
     # type: eval_float
-    answers['(a) C2-TPR'] = "2p"
+    answers['(a) C2-TPR'] = "2 * p"
 
     # type: eval_float
-    answers['(a) C1-FPR'] = "p"
+    answers['(a) C1-FPR'] = "1 * p"
 
     # type: eval_float
-    answers['(a) C2-FPR'] = "2p"
+    answers['(a) C2-FPR'] = "2 * p"
 
     # type: string
     # Hint: The random guess line in an ROC curve corresponds to TPR=FPR.
@@ -202,12 +202,7 @@ def question9():
 
     # type: dict[string,float]
     # keys: ['recall', 'precision', 'F-measure', 'accuracy']
-    answers['(i) metrics'] = : '{
-    'recall': 0.5333,
-    'precision': 0.6154,
-    'F-measure': 0.5714,
-    'accuracy': 0.88
-}
+    answers['(i) metrics'] = : {'recall': 0.5333, 'precision': 0.6154, 'F-measure': 0.5714,'accuracy': 0.88 }
 
     # type: string
     # choices: ['recall', 'precision', 'F-measure', 'accuracy']
@@ -215,7 +210,7 @@ def question9():
 
     # type: string
     # choices: ['recall', 'precision', 'F-measure', 'accuracy']
-    answers['(i) worst metric?'] = 'accuracy"
+    answers['(i) worst metric?'] = 'accuracy'
 
     # type: explain_string
     answers['(ii) Explain your choices of best and worst metrics'] = "Accuracy is misleading in imbalanced datasets, while F-measure provides a more reliable performance indicator by balancing precision and recall."
